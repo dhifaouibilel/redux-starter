@@ -1,0 +1,48 @@
+1- Design the store: 
+[
+    {
+        id:1,
+        description: "",
+        resolved: false
+    },
+    {...},
+    {...}, 
+    {...}, 
+]
+
+
+2- Defining the Actions:
+
+* Add a Bug
+* Mark as Resolved
+* Delete a Bug
+
+exp of action: 
+{
+    type: "ADD_BUG",
+    description: "..."
+}
+
+remarque: 
+you should use a descriptive string for the type .. by convention all uppercased separated by '_' but you can use any naming convention, e.g. "bugAdded"
+
+- the description is the data associated with this Action
+
+Redux was inspired by flux which is an architectural pattern and a library built by Facebook, in flux actions have slightly different structure:
+
+{
+    type: "bugAdded",
+    payload: {
+        description: "...",
+    }
+}
+
+you don't have to follow this structure in Redux because Redux doesn't care, but it give my actions a common and consistent structure
+
+3- Creating a Reducer
+
+
+
+
+
+// importing and exporting?
